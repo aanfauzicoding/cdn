@@ -27,14 +27,14 @@ const TEMPLATES = [
         '$1://gist.githack.com/$2'
     ],
     [/^(https?):\/\/(?:cdn\.)?rawgit\.com\/([^\/]+\/[^\/]+\/[^\/]+|[0-9A-Za-z-]+\/[0-9a-f]+\/raw)\/(.+)/i,
-        '$1://www.anzidesign.web.id/$2/$3'
+        '$1://raw.githubusercontent.com/$2/$3'
     ],
 
     [/^(https?):\/\/raw\.github(?:usercontent)?\.com\/([^\/]+\/[^\/]+\/[^\/]+|[0-9A-Za-z-]+\/[0-9a-f]+\/raw)\/(.+)/i,
-        '$1://www.anzidesign.web.id/$2/$3'
+        '$1://raw.githubusercontent.com/$2/$3'
     ],
     [/^(https?):\/\/github\.com\/(.[^\/]+?)\/(.[^\/]+?)\/(?!releases\/)(?:(?:blob|raw)\/)?(.+?\/.+)/i,
-        '$1://www.anzidesign.web.id/$2/$3/$4'
+        '$1://raw.githubusercontent.com/$2/$3/$4'
     ],
     [/^(https?):\/\/gist\.github(?:usercontent)?\.com\/(.+?\/[0-9a-f]+\/raw\/(?:[0-9a-f]+\/)?.+)$/i,
         '$1://gist.githack.com/$2'
